@@ -108,4 +108,23 @@ $(document).ready(function() {
 
   });
 
+  //Google Maps
+
+  let map = new GMaps({
+    div: '.map',
+    lat: 40.3820462,
+    lng: 49.879900,
+    zoom: 12
+  });
+  
+
+  map.addMarker({
+    lat: 40.3820462,
+    lng: 49.878552,
+    title: 'Omni Food Restorant',
+    infoWindow: {
+      content: '<p>We Place</p>'
+    }
+  });
+
 });
